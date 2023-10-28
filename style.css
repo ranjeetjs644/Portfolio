@@ -1,0 +1,470 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Sacramento&display=swap');
+
+    html,
+    * {
+        margin: 0;
+        padding: 0;
+        block-size: border-box;
+
+    }
+
+    body {
+        height: 100vh;
+        width: 100vw;
+        background-image: linear-gradient(to right top, #333333, #565656, #5a5a5a, #7b7b7b, #847e7e);
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        background-repeat: no-repeat;
+
+    }
+
+
+    /* 1. Navigation css */
+
+
+    header {
+        margin-top: 0;
+        height: 3rem;
+        font-family: 'Poppins', sans-serif;
+        z-index: 100;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }
+
+    nav {
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+
+
+    }
+
+    header nav .right {
+        display: flex;
+    }
+
+    header nav .right ul {
+
+        display: flex;
+        list-style-type: none;
+    }
+
+    header nav .right ul li {
+        margin: 0rem 1.5rem;
+
+    }
+
+    header nav .right ul li a:hover {
+
+        border-bottom: 3px solid #2a9990;
+        font-weight: 600;
+
+    }
+
+    header nav .right ul li a:active {
+        border-bottom: 3px solid #2a9990;
+        font-weight: 600;
+
+    }
+
+
+    header nav .right ul li a {
+        color: #fff;
+        color: black;
+
+        font-size: 1rem;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+
+    #name-logo {
+        
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #2a9990;
+        margin-top: 1rem;
+        margin-right: 2rem;
+    }
+
+    /* 2.Home page css */
+
+    .section-1 {
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+
+
+
+    }
+
+    .main-boxes {
+        width: 45%;
+        height: 70vh;
+        font-family: 'Poppins', sans-serif;
+    }
+
+
+    .section-1-left {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid rebeccapurple; */
+
+    }
+
+    .intro {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 2rem;
+
+
+    }
+
+    .hello {
+        color: #41079F;
+        font-size: 2.5rem;
+        font-weight: 600;
+        letter-spacing: 3px;
+        margin: 0rem 3rem;
+
+    }
+
+    .typing {
+        margin: 0rem 3rem;
+
+    }
+
+    .static {
+        color: rgb(26, 13, 39);
+        font-size: 1.4rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+
+
+    }
+
+    #element {
+        color: wheat;
+        font-weight: 600;
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+
+    }
+
+    .resume {
+        background-color: #2a9990;
+        width: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        padding: 10px;
+        position: relative;
+        top: 2rem;
+        left: 2.9rem;
+        box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 14px 1px;
+        letter-spacing: 2px;
+    }
+
+    .resume a {
+        color: whitesmoke;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        padding: 2px;
+    }
+
+    .section-1-right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        /* border: 2px solid rebeccapurple; */
+
+
+    }
+
+    #contact {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: whi;
+        text-align: left;
+        /* border: 2px solid rebeccapurple; */
+        padding: 5px;
+        margin-bottom: -25px;
+        padding-bottom: 0;
+        margin-right: 5rem;
+        /* color: white; */
+        letter-spacing: 2px;
+    }
+
+    .socialmediabox {
+        display: flex;
+        width: 50%;
+        margin-top: 2rem;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid rebeccapurple; */
+
+
+    }
+
+    .socialmediabox a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* padding: 2rem 0rem; */
+        text-decoration: none;
+        color: black;
+        font-size: .7rem;
+        text-align: center;
+        /* background-color: #333333; */
+        margin: 1rem;
+
+    }
+
+    .social-media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .social-media img {
+        width: 1.5rem;
+        transition: .2s ease-in-out;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+
+    }
+
+    #linkedin {
+        filter: drop-shadow(5px -5px 2px rgb(15, 4, 116));
+    }
+
+    #instagram {
+        filter: drop-shadow(5px -5px 2px rgb(163, 13, 83));
+
+    }
+
+    #facebook {
+        filter: drop-shadow(5px -5px 2px rgb(64, 67, 206));
+
+    }
+
+    #github {
+        filter: drop-shadow(5px -5px 2px rgb(15, 15, 15));
+    }
+
+    .social-media :hover {
+        transform: scale(1.5);
+    }
+
+
+
+    /* Add a title between section 1 and 2 */
+    .section-title p {
+        width: 100%;
+        height: 2rem;
+        background-color: #2a9990;
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-family: 'Montserrat', sans-serif;
+        justify-content: center;
+
+    }
+
+    .section-title p img {
+        width: 1.8rem;
+        padding: auto;
+        margin-right: .7rem;
+    }
+
+
+
+    /* section1 */
+
+    .section-2 {
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(to right top, #333333, #565656, #5a5a5a, #7b7b7b, #847e7e);
+        display: flex;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        justify-content: space-around;
+        transition: 1s ease-in-out;
+    }
+
+    .about-containers {
+        width: 40%;
+        height: 80vh;
+        position: relative;
+        top: 2rem;
+        display: flex;
+        justify-content: center;
+        /* border: 2px solid black; */
+        flex-direction: column;
+
+    }
+
+    .image-left img {
+        width: 17rem;
+        border-radius: 2px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        filter: grayscale(100%);
+        transition: .3s ease-in-out;
+
+    }
+
+    .image-left img:hover {
+        filter: none;
+        cursor: pointer;
+    }
+
+    .image-left {
+        align-items: center;
+    }
+
+    .about-right {
+        width: 50%;
+        text-align: justify;
+        margin-left: 2rem;
+    }
+
+    .about-right p:first-child {
+
+        font-size: 1.6rem;
+        font-weight: 600;
+        letter-spacing: 4px;
+
+
+    }
+
+    .about-containers p:nth-child(2) {
+        color: #020133;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .about-containers p:nth-child(3) {
+        line-height: 1.3rem;
+        margin-top: 1rem;
+        column-rule: black;
+        font-family: 'poppins';
+        width: 80%;
+        text-align: left;
+    }
+
+    .about-containers p:nth-child(4) {
+        font-weight: 600;
+        margin-top: 1rem;
+    }
+
+    .about-containers p:nth-child(4) a {
+        color: rgb(13, 13, 59);
+        letter-spacing: 2px;
+
+    }
+
+    .about-containers p:nth-child(5) {
+        margin-top: 1rem;
+        font-weight: 600;
+    }
+
+    .about-containers p:nth-child(5) span {
+        color: rgb(13, 13, 59);
+        font-weight: 600;
+        letter-spacing: 2px;
+
+    }
+
+    .section-3 {
+        margin-top: 0rem;
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(to right top, #333333, #565656, #5a5a5a, #7b7b7b, #847e7e);
+        display: flex;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        justify-content: space-around;
+        transition: 1s ease-in-out;
+    }
+
+
+
+
+
+
+    .charts {
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-around;
+        gap: 12rem;
+
+    }
+
+
+    .chart-item {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        letter-spacing: 2px;
+        border-radius: 50%;
+    }
+
+
+    .html {
+        border: 10px solid orange;
+        color: white;
+    }
+
+    .css {
+        border: 10px solid #2a9990;
+        color: white;
+    }
+
+    .js {
+        border: 10px solid #020133;
+        color: white;
+    }
+
+    .cpp {
+
+        border: 10px solid #41079F;
+        color: white;
+    }
+
+    .github {
+
+        border: 10px solid #f5f150;
+        color: white;
+    }

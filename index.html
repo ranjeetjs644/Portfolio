@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/MyPortFolio/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="fixed-navbar">
+            <div class="left">
+                <p id="name-logo">ranjeet</p>
+                <img src="/assets/name-logo.png" alt=""  id="name-logo">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="section-1" id="home">
+            <div class="section-1-left main-boxes">
+                <div class="intro">
+                    <div class="hello">
+                        <p>Hi There !</p>
+                    </div>
+                    <div class="typing">
+                        <span class="static">I'm a passionate&nbsp;</span><span id="element"> </span>
+                    </div>
+                    <div class="resume"><a href="#">Resume </a></div>
+                </div>
+
+            </div>
+
+
+
+            <div class="section-1-right main-boxes">
+                <p id="contact">Get Connected...</p>
+                <div class="socialmediabox">
+                    <div class="social-media"><a href=""><img src="/assets/linkedin.png " id="linkedin"
+                                alt="facbook.png">Linkedin</a></div>
+                    <div class="social-media"><a href=""><img src="/assets/github.png" alt=""
+                                id="github">github</a>
+                    </div>
+                    <div class="social-media"><a href=""> <img src="/assets/instagram.png" id="instagram"
+                                alt="">instagram</a>
+                    </div>
+                    <div class="social-media"><a href=""><img src="/assets//facebook.png" alt=""
+                                id="facebook">facebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="section-title">
+            <p><img src="/assets/user.png" alt="" > About me</p>
+        </div> -->
+        
+
+        <div class="section-2" id="about">
+
+            <div class="image-left about-containers"><img src="/assets/my-img.jpg" alt=""></div>
+            <div class="about-right about-containers">
+                <p>I'm Ranjit</p>
+                <p>Full stack Developer</p>
+                <p>I am a Full-Stack developer based in Ahmedabad, India. I am a computer science undergraduate from
+                    SOU. I am very passionate about improving my coding skills & developing applications & websites. I
+                    build WebApps and Websites using MERN Stack. Working for myself to improve my skills. Love to build
+                    Full-Stack clones.</p>
+                <p>
+                    E-mail : <a href="">ranjeetjs644@gmail.com</a>
+                </p>
+                <p>
+                    Location : <span>Ahmedabad, India - 380026</span>
+                </p>
+                
+                
+
+            </div>
+        </div>
+
+        <div class="section-3" id="skills">
+
+            <div class="charts">
+                <div class="html chart-item">HTML</div>
+                <div class="css chart-item">CSS</div>
+                <div class="js chart-item">JAVASCRIPT</div>
+                <div class="cpp chart-item">C & C++</div>
+                <div class="github chart-item">GITHUB</div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+
+
+</body>
+
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<!-- Setup and start animation! -->
+<script>
+    var typed = new Typed('#element', {
+        strings: [' Web Developer', 'Graphic Designer', 'Video Editor', 'Android Developer'],
+        typeSpeed: 50,
+    });
+
+
+
+
+    // Function to apply blur effect to the header on scroll
+    function applyHeaderBlur() {
+        const header = document.querySelector('header');
+        const scrollY = window.scrollY || window.pageYOffset;
+
+        // Adjust this value to control when the blur effect starts
+        const blurThreshold = 100;
+
+        if (scrollY > blurThreshold) {
+            header.style.backdropFilter = 'blur(5px)'; // Adjust blur intensity as needed
+        } else {
+            header.style.backdropFilter = 'none';
+        }
+    }
+
+    // Initial call to apply the blur on page load (if needed)
+    applyHeaderBlur();
+
+    // Add an event listener to trigger the function when scrolling
+    window.addEventListener('scroll', applyHeaderBlur);
+
+
+
+
+
+// Get all the links in the navigation
+const links = document.querySelectorAll('header nav .right ul li a');
+
+// Function to apply the hover effect
+function handleLinkHover(event) {
+  // Remove the effect from all links
+  links.forEach(link => {
+    link.style.borderBottom = 'none';
+    link.style.fontWeight = 'normal';
+  });
+
+  // Apply the effect to the hovered link
+  event.target.style.borderBottom = '3px solid #2a9990';
+  event.target.style.fontWeight = '600';
+}
+
+// Add hover event listeners to each link
+links.forEach(link => {
+  link.addEventListener('mouseover', handleLinkHover);
+  link.addEventListener('mouseout', handleLinkHover);
+});
+
+
+// Function to smoothly scroll to the target element
+function smoothScroll(target, duration) {
+  const targetElement = document.querySelector(target);
+  if (!targetElement) return;
+
+  const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+  const startPosition = window.scrollY;
+  const distance = targetPosition - startPosition;
+  const startTime = performance.now();
+
+  function animate(currentTime) {
+    const timeElapsed = currentTime - startTime;
+    const progress = Math.min(timeElapsed / duration, 1);
+    window.scrollTo(0, startPosition + distance * progress);
+
+    if (progress < 1) {
+      requestAnimationFrame(animate);
+    }
+  }
+
+  requestAnimationFrame(animate);
+}
+
+// Add smooth scrolling behavior to anchor links
+const anchorLinks = document.querySelectorAll('a[href^="#"]');
+
+anchorLinks.forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault();
+    const targetId = link.getAttribute('href');
+    smoothScroll(targetId, 1000); // Adjust the duration (in milliseconds) as needed
+  });
+});
+
+
+
+
+</script>
+
+</html>
