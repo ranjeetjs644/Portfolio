@@ -3,6 +3,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Sacramento&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
     html,
     * {
@@ -15,7 +16,8 @@
     body {
         height: 100vh;
         width: 100vw;
-        background-image: linear-gradient(to right top, #333333, #565656, #5a5a5a, #7b7b7b, #847e7e);
+        /* background-image: linear-gradient(to right top, #333333, #565656, #5a5a5a, #7b7b7b, #847e7e); */
+        background-color: #fff;
         background-repeat: no-repeat;
         overflow-x: hidden;
         margin: 0;
@@ -24,6 +26,12 @@
 
     }
 
+    nav .left p {
+        font-size: 2.5rem;
+        font-family: 'Lobster', sans-serif;
+        letter-spacing: 2px;
+        color: #ee811c;
+    }
 
     /* 1. Navigation css */
 
@@ -38,6 +46,8 @@
         left: 0;
         width: 100%;
         z-index: 100;
+        /* background-color: #333333; */
+        opacity: .7;
     }
 
     nav {
@@ -80,9 +90,8 @@
 
 
     header nav .right ul li a {
-        color: #fff;
+        /* color: #fff; */
         color: black;
-
         font-size: 1rem;
         text-decoration: none;
         letter-spacing: 3px;
@@ -90,14 +99,6 @@
 
     }
 
-    #name-logo {
-        
-        font-size: 2.5rem;
-        font-weight: 600;
-        color: #2a9990;
-        margin-top: 1rem;
-        margin-right: 2rem;
-    }
 
     /* 2.Home page css */
 
@@ -164,7 +165,7 @@
     }
 
     #element {
-        color: wheat;
+        color: blueviolet;
         font-weight: 600;
         font-size: 1.6rem;
         letter-spacing: 2px;
@@ -184,6 +185,10 @@
         left: 2.9rem;
         box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 14px 1px;
         letter-spacing: 2px;
+        transition: .3s ease-in-out;
+    }
+    .resume:hover{
+        background-color: #41079F;
     }
 
     .resume a {
@@ -203,6 +208,18 @@
 
 
     }
+
+    .home-img{
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+    }
+ 
+    .home-img img{
+        width: 20rem;
+    }
+
 
     #contact {
         font-size: 1.2rem;
@@ -312,7 +329,8 @@
     .section-2 {
         width: 100vw;
         height: 100vh;
-        background-image: linear-gradient(to right top, #333333, #565656, #5a5a5a, #7b7b7b, #847e7e);
+        /* background-image: linear-gradient(to right top, #333333, #565656, #5a5a5a, #7b7b7b, #847e7e); */
+        background-color: #fff;
         display: flex;
         align-items: center;
         font-family: 'Montserrat', sans-serif;
@@ -407,7 +425,8 @@
         margin-top: 0rem;
         width: 100vw;
         height: 100vh;
-        background-image: linear-gradient(to right top, #333333, #565656, #5a5a5a, #7b7b7b, #847e7e);
+        /* background-image: linear-gradient(to right top, #333333, #565656, #5a5a5a, #7b7b7b, #847e7e); */
+        background-color: #fff;
         display: flex;
         align-items: center;
         font-family: 'Montserrat', sans-serif;
@@ -417,54 +436,42 @@
 
 
 
+    .skill-container {
 
-
-
-    .charts {
-        margin-top: 3rem;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: space-around;
-        gap: 12rem;
-
-    }
-
-
-    .chart-item {
-        width: 150px;
-        height: 150px;
+        width: 100%;
+        height: auto;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+
+    .skill-container div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 15rem;
+        height: 15rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
+        /* background-color: #3d0e8ab6; */
+        border-radius: 20px;
+        
+
+    }
+
+    .skill-container div img{
+        width: 7rem;
+        margin-bottom: 1rem;
+    }
+    .skill-container div img:hover{
+        transform: scale(1.2);
+    }
+   
+    .skill-container div  p{
+        font-size: 1.3rem;
         font-weight: 600;
         letter-spacing: 2px;
-        border-radius: 50%;
+        /* color: #fff; */
     }
-
-
-    .html {
-        border: 10px solid orange;
-        color: white;
-    }
-
-    .css {
-        border: 10px solid #2a9990;
-        color: white;
-    }
-
-    .js {
-        border: 10px solid #020133;
-        color: white;
-    }
-
-    .cpp {
-
-        border: 10px solid #41079F;
-        color: white;
-    }
-
-    .github {
-
-        border: 10px solid #f5f150;
-        color: white;
-    }
+   

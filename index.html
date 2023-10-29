@@ -13,8 +13,7 @@
     <header>
         <nav class="fixed-navbar">
             <div class="left">
-                <p id="name-logo">ranjeet</p>
-                <img src="/assets/name-logo.png" alt=""  id="name-logo">
+                <p>ranjeet</p>
             </div>
             <div class="right">
                 <ul>
@@ -43,15 +42,15 @@
 
             </div>
 
-
-
             <div class="section-1-right main-boxes">
+                <div class="home-img">
+                    <img src="/assets/my-img.png" alt="">
+                </div>
                 <p id="contact">Get Connected...</p>
                 <div class="socialmediabox">
                     <div class="social-media"><a href=""><img src="/assets/linkedin.png " id="linkedin"
                                 alt="facbook.png">Linkedin</a></div>
-                    <div class="social-media"><a href=""><img src="/assets/github.png" alt=""
-                                id="github">github</a>
+                    <div class="social-media"><a href=""><img src="/assets/github.png" alt="" id="github">github</a>
                     </div>
                     <div class="social-media"><a href=""> <img src="/assets/instagram.png" id="instagram"
                                 alt="">instagram</a>
@@ -61,12 +60,15 @@
                     </div>
                 </div>
             </div>
+
+        </div>
+        </div>
         </div>
 
         <!-- <div class="section-title">
             <p><img src="/assets/user.png" alt="" > About me</p>
         </div> -->
-        
+
 
         <div class="section-2" id="about">
 
@@ -84,28 +86,33 @@
                 <p>
                     Location : <span>Ahmedabad, India - 380026</span>
                 </p>
-                
-                
+
+
 
             </div>
         </div>
 
         <div class="section-3" id="skills">
 
-            <div class="charts">
-                <div class="html chart-item">HTML</div>
-                <div class="css chart-item">CSS</div>
-                <div class="js chart-item">JAVASCRIPT</div>
-                <div class="cpp chart-item">C & C++</div>
-                <div class="github chart-item">GITHUB</div>
+            <div class="skill-container">
+                <div class="html"><img src="/assets/html.png" alt="">
+                    <p>HTML</p>
+                    <p>75%</p>
+                </div>
+                <div class="css"><img src="/assets/css-3.png" alt="">
+                    <p>CSS</p>
+                    <p>70%</p>
+                </div>
+                <div class="css"><img src="/assets/expresjs.png" alt="">
+                    <p>Javascript</p>
+                    <p>2%</p>
+                </div>
             </div>
+        </div>
+        </div>
 
         </div>
     </main>
-
-
-
-
 
 
 </body>
@@ -148,62 +155,62 @@
 
 
 
-// Get all the links in the navigation
-const links = document.querySelectorAll('header nav .right ul li a');
+    // Get all the links in the navigation
+    const links = document.querySelectorAll('header nav .right ul li a');
 
-// Function to apply the hover effect
-function handleLinkHover(event) {
-  // Remove the effect from all links
-  links.forEach(link => {
-    link.style.borderBottom = 'none';
-    link.style.fontWeight = 'normal';
-  });
+    // Function to apply the hover effect
+    function handleLinkHover(event) {
+        // Remove the effect from all links
+        links.forEach(link => {
+            link.style.borderBottom = 'none';
+            link.style.fontWeight = 'normal';
+        });
 
-  // Apply the effect to the hovered link
-  event.target.style.borderBottom = '3px solid #2a9990';
-  event.target.style.fontWeight = '600';
-}
-
-// Add hover event listeners to each link
-links.forEach(link => {
-  link.addEventListener('mouseover', handleLinkHover);
-  link.addEventListener('mouseout', handleLinkHover);
-});
-
-
-// Function to smoothly scroll to the target element
-function smoothScroll(target, duration) {
-  const targetElement = document.querySelector(target);
-  if (!targetElement) return;
-
-  const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-  const startPosition = window.scrollY;
-  const distance = targetPosition - startPosition;
-  const startTime = performance.now();
-
-  function animate(currentTime) {
-    const timeElapsed = currentTime - startTime;
-    const progress = Math.min(timeElapsed / duration, 1);
-    window.scrollTo(0, startPosition + distance * progress);
-
-    if (progress < 1) {
-      requestAnimationFrame(animate);
+        // Apply the effect to the hovered link
+        event.target.style.borderBottom = '3px solid #2a9990';
+        event.target.style.fontWeight = '600';
     }
-  }
 
-  requestAnimationFrame(animate);
-}
+    // Add hover event listeners to each link
+    links.forEach(link => {
+        link.addEventListener('mouseover', handleLinkHover);
+        link.addEventListener('mouseout', handleLinkHover);
+    });
 
-// Add smooth scrolling behavior to anchor links
-const anchorLinks = document.querySelectorAll('a[href^="#"]');
 
-anchorLinks.forEach(link => {
-  link.addEventListener('click', event => {
-    event.preventDefault();
-    const targetId = link.getAttribute('href');
-    smoothScroll(targetId, 1000); // Adjust the duration (in milliseconds) as needed
-  });
-});
+    // Function to smoothly scroll to the target element
+    function smoothScroll(target, duration) {
+        const targetElement = document.querySelector(target);
+        if (!targetElement) return;
+
+        const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+        const startPosition = window.scrollY;
+        const distance = targetPosition - startPosition;
+        const startTime = performance.now();
+
+        function animate(currentTime) {
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / duration, 1);
+            window.scrollTo(0, startPosition + distance * progress);
+
+            if (progress < 1) {
+                requestAnimationFrame(animate);
+            }
+        }
+
+        requestAnimationFrame(animate);
+    }
+
+    // Add smooth scrolling behavior to anchor links
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
+
+    anchorLinks.forEach(link => {
+        link.addEventListener('click', event => {
+            event.preventDefault();
+            const targetId = link.getAttribute('href');
+            smoothScroll(targetId, 1000); // Adjust the duration (in milliseconds) as needed
+        });
+    });
 
 
 
