@@ -404,7 +404,7 @@
         }
 
         .about-containers p:nth-child(3) {
-            line-height: 1.3rem;
+            line-height: 1.5rem;
             margin-top: 1rem;
             column-rule: black;
             font-family: 'poppins';
@@ -718,6 +718,7 @@
             justify-content: center;
             padding: 1rem;
             padding-top: 2px;
+            width: 10rem;
         }
 
         .footer-right div:nth-child(3) i {
