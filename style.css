@@ -725,3 +725,69 @@
             padding: 10px;
             filter: invert(100);
         }
+
+
+
+        /* Responsice code */
+
+        @media screen and (max-width:425px) {
+            
+            nav{
+                height: 5rem;
+            }
+
+          
+          nav .right ul li {
+            width: auto;
+            margin: 1rem;
+          }
+          nav .right ul li a {
+            font-size: .9rem;
+          }
+          nav .right ul li{
+            margin: 1rem 0;
+          }
+           
+          .section-1{
+            justify-content: space-around;
+            text-align: center;
+            margin-left: 9rem;
+            margin-top: 8rem;
+          }
+
+          .section-1 .main-boxes{
+            margin: 8rem;
+            width: 100%;
+            width: 15rem;
+          }
+
+          .intro{
+            width: 25rem;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+
+          }
+
+          .hello{
+            font-size: 1.8rem;
+            width: 15rem;
+          }
+          #element{
+            width: 20rem;
+          }
+          .resume{
+            margin-left: 2rem;
+          }
+
+          .section-1-right{
+            display: none;
+            align-items: center;
+            justify-content: center;
+          }
+          .section-2{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        }
