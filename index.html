@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="/MyPortFolio/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -20,7 +22,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -97,25 +99,141 @@
             <div class="skill-container">
                 <div class="html"><img src="/assets/html.png" alt="">
                     <p>HTML</p>
-                    <p>75%</p>
+
                 </div>
                 <div class="css"><img src="/assets/css-3.png" alt="">
                     <p>CSS</p>
-                    <p>70%</p>
+
                 </div>
-                <div class="css"><img src="/assets/expresjs.png" alt="">
+                <div class="js"><img src="/assets/expresjs.png" alt="">
                     <p>Javascript</p>
-                    <p>2%</p>
+
+                </div>
+                <div class="mongodb"><img src="/assets/mongodb.png" alt="">
+                    <p>MongoDB</p>
+
+                </div>
+                <div class="nodejs"><img src="/assets/nodejs.png" alt="">
+                    <p>NodeJS</p>
+
+                </div>
+                <div class=""><img src="/assets/expresjs.png" alt="">
+                    <p>Javascript</p>
+
+                </div>
+                <div class="html"><img src="/assets/html.png" alt="">
+                    <p>HTML</p>
+
+                </div>
+                <div class="css"><img src="/assets/css-3.png" alt="">
+                    <p>CSS</p>
+
+                </div>
+                <div class="js"><img src="/assets/expresjs.png" alt="">
+                    <p>Javascript</p>
+
+                </div>
+                <div class="mongodb"><img src="/assets/mongodb.png" alt="">
+                    <p>MongoDB</p>
+
+                </div>
+                <div class="nodejs"><img src="/assets/nodejs.png" alt="">
+                    <p>NodeJS</p>
+
+                </div>
+                <div class=""><img src="/assets/expresjs.png" alt="">
+                    <p>Javascript</p>
+
                 </div>
             </div>
         </div>
-        </div>
+
+        <div class="section-4 " id="contact-section">
+
+            <div class="contact-container">
+                <h2>Contact Us</h2>
+                <form>
+                    <div class="input-container">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="message">Message</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+
 
         </div>
     </main>
 
 
+    <footer>
+        <div class="container">
+            <div class="footer-left">
+                <div class="name">
+                    <h2>Ranjeet Patel</h2>
+                </div>
+                <div class="role">
+                    <p>Software Developer</p>
+                </div>
+                <div class="techs">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Javascript</p>
+                    <p>SQL</p>
+                </div>
+            </div>
+            <div class="footer-mid">
+                <div class="location">
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Ahmedabad</p>
+                    </div>
+
+                </div>
+                <div class="contact-number">
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+91 9313772169</p>
+                    </div>
+                </div>
+                <div class="contact-email">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>@ranjeetjs644@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div>
+                    <h2>About me </h2>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
+
+
+
+
+
 
 
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -126,8 +244,6 @@
         strings: [' Web Developer', 'Graphic Designer', 'Video Editor', 'Android Developer'],
         typeSpeed: 50,
     });
-
-
 
 
     // Function to apply blur effect to the header on scroll
