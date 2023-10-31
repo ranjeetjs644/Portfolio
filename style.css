@@ -1,9 +1,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
-        /* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Sacramento&display=swap'); */
         @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
         html,
         * {
@@ -27,10 +25,12 @@
         }
 
         nav .left p {
-            font-size: 2.5rem;
-            font-family: 'Lobster', sans-serif;
-            letter-spacing: 2px;
+            font-size: 1.5rem;
+            font-weight: 600;
             color: chocolate;
+            text-transform: uppercase;
+            font-family: 'Merriweather', serif;
+            letter-spacing: 2px;
 
         }
 
@@ -55,6 +55,9 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
+            background-color: lavender;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+
 
 
 
@@ -141,7 +144,7 @@
         }
 
         .hello {
-            color: #41079F;
+            color: #8a5cd3;
             font-size: 2.5rem;
             font-weight: 600;
             letter-spacing: 3px;
@@ -395,7 +398,7 @@
         }
 
         .about-containers p:nth-child(2) {
-            color: #020133;
+            color: #8a5cd3;
             font-weight: 600;
             font-size: 1rem;
         }
@@ -415,7 +418,7 @@
         }
 
         .about-containers p:nth-child(4) a {
-            color: rgb(13, 13, 59);
+            color: #8a5cd3;
             letter-spacing: 2px;
 
         }
@@ -426,7 +429,7 @@
         }
 
         .about-containers p:nth-child(5) span {
-            color: rgb(13, 13, 59);
+            color: #8a5cd3;
             font-weight: 600;
             letter-spacing: 2px;
 
